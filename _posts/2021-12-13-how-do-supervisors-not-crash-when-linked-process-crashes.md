@@ -1,8 +1,11 @@
 ---
-title: How do supervisors not crash when one of the children processes crashes
+title: How do supervisors not crash?
+date: 2021-12-13
 tags: [elixir, supervisor, agent, genserver]
-categories: [TIL, Elixir]
+description: How do supervisors not crash when their children do?
 ---
+
+How do supervisors not crash when their children do?
 
 When you start an `Agent` or `GenServer` they will be **linked** to the current process and the current process will crash if the **linked** `Agent` or `GenServer` crashes.
 However `Supervisor`s do not crash even if the child processes that are **linked** to the supervisor crash. Well, the answer is obvious.
