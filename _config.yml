@@ -1,7 +1,7 @@
 # Site settings
 title: Burak Kaymakci # site title
 description: >- # site description
-  Documenting my journey with programming languages, foreign languages and other shit. You can find me <a href="https://github.com/andreyuhai" target="_blank" rel="noopener">@github</a>.
+  Documenting my journey with programming languages, foreign languages and other shit.
 lang: en-US # default lang
 timezone: Europe/Warsaw # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
