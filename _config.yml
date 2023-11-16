@@ -1,20 +1,18 @@
 # Site settings
-title: Klise Theme # site title
+title: Burak Kaymakci # site title
 description: >- # site description
-  He's writing in Bahasa about web technology and experience as a journal
-  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
+  Documenting my journey with programming languages, foreign languages and other shit. You can find me <a href="https://github.com/andreyuhai" target="_blank" rel="noopener">@github</a>.
 lang: en-US # default lang
 timezone: Europe/Warsaw # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
+repo: https://github.com/andreyuhai/andreyuhai.github.io # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
   name: Burak Kaymakci # author name
   bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog,
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
+    A life-long student who loves programming languages and the ones we speak.
   username: andreyuhai # general username
   github: andreyuhai # github username
   twitter: andreyuhai # twitter username
