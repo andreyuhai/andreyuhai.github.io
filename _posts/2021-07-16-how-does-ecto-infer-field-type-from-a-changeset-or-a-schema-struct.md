@@ -1,8 +1,11 @@
 ---
-title: How Ecto infers field types from a changeset or a schema struct
+title: Ecto field types from a changeset or a schema struct
 tags: [elixir, ecto, cast]
 categories: [TIL, Elixir]
+description: I was wondering how Ecto.Changeset.cast/4 casts attributes from a map into their appropriate types in the DB and here I explain just that.
 ---
+
+How does Ecto infer field types from a changeset or a schema struct?
 
 I was wondering how [`Ecto.Changeset.cast/4`](https://hexdocs.pm/ecto/Ecto.Changeset.html#cast/4) function casts attributes from a map into their approriate types in the DB since we do not provide any information about the types explicitly.
 
@@ -18,13 +21,13 @@ Create a Phoenix app:
 
 ```bash
 $ mix phx.new god
-``` 
+```
 
 After our project is created, and we ran `mix ecto.create` inside the project directory we need to generate our controller, view and context for `Human` to be able to CRUD `Human`s.
 
 ```bash
 ╰─$ mix phx.gen.html Creature Human humans name surname to_be_born_on:utc_datetime age_to_die_at:integer will_get_married:boolean
-                                                                      
+
 * creating lib/god_web/controllers/human_controller.ex
 * creating lib/god_web/templates/human/edit.html.eex
 * creating lib/god_web/templates/human/form.html.eex
@@ -209,7 +212,7 @@ iex(18)> defmodule Foo do
  <<70, 79, 82, 49, 0, 0, 6, 152, 66, 69, 65, 77, 65, 116, 85, 56, 0, 0, 0, 180,
    0, 0, 0, 18, 10, 69, 108, 105, 120, 105, 114, 46, 70, 111, 111, 8, 95, 95,
    105, 110, 102, 111, 95, 95, 10, 97, 116, ...>>, %Foo{age: nil, name: nil}}
-   
+
 iex(19)> Ecto.Changeset.cast(%Foo{}, %{name: "Burak"}, [:name])
 ** (UndefinedFunctionError) function Foo.__changeset__/0 is undefined or private
     Foo.__changeset__()
