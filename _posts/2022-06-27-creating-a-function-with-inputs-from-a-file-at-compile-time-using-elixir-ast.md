@@ -2,9 +2,10 @@
 title: Creating a function with inputs from a file at compile time using Elixir AST
 tags: [elixir, elixir-ast, abstract-syntax-tree]
 categories: [TIL, Elixir]
+description: Create a function with inputs from a file at compile time using Elixir AST.
 ---
 
-Let me fill you in on what the problem I was trying to solve was, then we can get to how I've solved the problem by creating a function with inputs from a "defaults" file at compile time using Elixir's Abstract Syntax Tree (AST). 
+Let me fill you in on what the problem I was trying to solve was, then we can get to how I've solved the problem by creating a function with inputs from a "defaults" file at compile time using Elixir's Abstract Syntax Tree (AST).
 
 We have a CSV file that has some defaults for our business logic, the file barely changes and is not huge.
 The content of the file is transformed into a list of tuples using a script and the script is included in one of the modules as comments.
@@ -15,7 +16,7 @@ So the script looks something like this
 ```elixir
 # example CSV just in case you want to run this script.
 # Just copy & paste the values below into some CSV file.
-# 
+#
 # service_name,base_price,duration
 # Haircut,50,30
 # Manicure,50,60
