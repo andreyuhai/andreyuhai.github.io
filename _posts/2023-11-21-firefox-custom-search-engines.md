@@ -15,5 +15,5 @@ browser.urlbar.update2.engineAliasRefresh
 Then you can go to Settings > Search and you'll be able to see the "Add" button under the section "Search Shortcuts". You can see an example of how to add a custom search engine for YouTube, which means that you'll be able to search on YouTube simply by typing into your URL bar after you hit the shortcut "yt" while the focus is on the URL bar.
 
 <figure>
-<img src="/images/firefox-custom-search-engines/how-to-add-firefox-custom-search-engine.png" alt="How to add Firefox custom search engine?">
+<img src="/images/firefox-custom-search-engines/how-to-add-custom-firefox-search-engine.png" alt="How to add Firefox custom search engine?">
 </figure>
