@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL 55000 error
-date: 2023-11-21
+date: 2024-01-29
 tags: [til, postgresql]
 description: What was the root cause of PostgreSQL 55000 error in our case
 ---
