@@ -20,6 +20,7 @@ SELECT pg_last_wal_replay_lsn()::varchar
 ```
 
 It turns out we were actually querying a replica where WAL was enabled, figured that out quite quickly by asking in #postgresql IRC.
+(_Well, if you're querying the LSN it obviously means you've got WAL enabled, it's even in the function name! But didn't know it back then. ¯\_(ツ)_/¯_)
 
 > 10:49 < Berge> Note that a replica (using WAL replication) is considered to be in recovery
 
