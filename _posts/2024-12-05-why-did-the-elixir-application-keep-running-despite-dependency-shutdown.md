@@ -56,6 +56,12 @@ This guarantees that, if any dependency of our application (or the application i
 
 > :permanent - if app terminates, all other applications and the entire node are also terminated.
 
+Just to note it here, to see `restart_type`s of all started applications, you can run:
+
+```elixir
+:application_controller.info()
+```
+
 ### Sources
 
 Some links that helped me understand how Erlang manages applications and the role of `restart_type`.
